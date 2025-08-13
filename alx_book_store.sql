@@ -22,8 +22,8 @@ CREATE TABLE BOOKS (
 CREATE TABLE CUSTOMERS (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_name VARCHAR(215) NOT NULL,
-    EMAIL VARCHAR(215) NOT NULL,
-    ADDRESS TEXT
+    email VARCHAR(215) NOT NULL,
+    address text
 );
 
 -- Orders table
