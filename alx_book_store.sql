@@ -1,5 +1,5 @@
 -- Create the database
-CREATE DATABASE ALX_BOOK_STORE;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE ALX_BOOK_STORE;
 
 -- Authors table
