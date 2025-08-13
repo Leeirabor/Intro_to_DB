@@ -28,10 +28,10 @@ CREATE TABLE CUSTOMERS (
 
 -- Orders table
 CREATE TABLE ORDERS (
-    orders_id INT PRIMARY KEY AUTO_INCREMENT,
+    orders_id INT FOREIGN KEY AUTO_INCREMENT,
     CUSTOMER_ID INT,
     order_date DATE,
-    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(CUSTOMER_ID)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 -- Order_Details table
