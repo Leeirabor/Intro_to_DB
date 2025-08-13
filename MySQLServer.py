@@ -16,8 +16,8 @@ try:
         cursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
         print(f"Database '{DB_NAME}' created successfully!")
 
-except Mysql.connector.Error as e:
-    print(f"Error: {e}")
+except Mysql.connector.Error:
+    print(f"Error:")
 
 finally:
     # Ensure the connection is closed
